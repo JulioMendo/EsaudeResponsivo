@@ -2,6 +2,31 @@ body {
     color: white;
 }
 
+#jumboCarousel {
+    min-height: 300px;
+    min-width: 100%;
+}
+#jumboCarousel img {
+    min-height: 300px;
+    min-width: 100%;
+}
+
+#jumboCarousel .carousel-caption {
+    color: white;
+    left: 58%;
+    text-align: center;
+    max-width: 500px;
+    left: auto;
+    /*top: auto;*/
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.item {
+
+}
+
 #hero {
     background: url('/assets/banner.jpg') no-repeat;
     background-size:cover;
