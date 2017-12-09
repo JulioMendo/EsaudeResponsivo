@@ -1,0 +1,69 @@
+body {
+    color: white;
+}
+
+#hero {
+    background: url('/assets/banner.jpg') no-repeat;
+    background-size:cover;
+    background-position:0 60%;
+}
+h1 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    font-size: 4.0em;
+}
+
+h4 {
+    font-family: "Cairo", sans-serif;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+h1.short {
+    line-height: 80%;
+    }
+
+
+h4.text-justify{
+    text-align: right;
+    max-width: 300px;
+    }
+
+
+.navbar {
+    
+    width:100%;
+    background: none !important;
+
+    @media(max-width:34em) {
+        background: #184264 !important;
+    }
+
+
+    .navbar-toggler {
+        cursor:pointer;
+        outline:0;
+    }
+
+    .nav-link {
+        text-transform:uppercase;
+        font-family: "Cairo", sans-serif;
+        font-weight: normal;
+    }
+
+    .nav-item{
+        padding: 0 1rem;
+
+        @media(max-width: 34em) {
+            padding: 0;
+        }
+    }
+
+    .nav-link {
+        font-weight: normal;
+        color: white !important;
+        @media(max-width: 34em) {
+            font-weight:normal;
+            color: white !important;
+        }
+    }  
+}
