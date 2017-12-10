@@ -3,7 +3,7 @@ body {
 
 #jumboCarousel {
   margin-top: -50%;
-  min-height: 300px;
+  height: 100%;
   min-width: 100%; }
 
 #jumboCarousel img {
@@ -12,7 +12,6 @@ body {
 
 #jumboCarousel .carousel-caption {
   color: white;
-  left: 58%;
   text-align: center;
   max-width: 500px;
   left: auto;
@@ -21,20 +20,29 @@ body {
   transform: translateY(-50%);
   bottom: initial; }
 
-#hero {
-  background: url("/assets/banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: 0 60%; }
+.item {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 h1 {
   font-family: "Cairo", sans-serif;
   font-weight: 600;
   font-size: 4.0em; }
+  @media (max-width: 62em) {
+    h1 {
+      font-size: 3.2em; } }
+  @media (max-width: 47.9em) {
+    h1 {
+      font-size: 2.2em; } }
 
 h4 {
   font-family: "Cairo", sans-serif;
   font-weight: normal;
   font-size: 1.3em; }
+  @media (max-width: 62em) {
+    h4 {
+      font-size: 1em; } }
 
 h1.short {
   line-height: 80%; }
@@ -42,13 +50,24 @@ h1.short {
 h4.text-justify {
   text-align: right;
   max-width: 300px; }
+  @media (max-width: 62em) {
+    h4.text-justify {
+      max-width: 200px; } }
+
+.navbar-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 10; }
 
 .navbar {
   width: 100%;
-  background: none !important; }
-  @media (max-width: 34em) {
-    .navbar {
-      background: #184264 !important; } }
+  background: none !important;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 0;
+  border-color: transparent; }
   .navbar .navbar-toggler {
     cursor: pointer;
     outline: 0; }
@@ -60,7 +79,7 @@ h4.text-justify {
     padding: 0 1rem; }
     @media (max-width: 34em) {
       .navbar .nav-item {
-        padding: 0; } }
+        padding: 0 1rem; } }
   .navbar .nav-link {
     font-weight: normal;
     color: white !important; }
@@ -68,3 +87,9 @@ h4.text-justify {
       .navbar .nav-link {
         font-weight: normal;
         color: white !important; } }
+
+@media (max-width: 62em) {
+  .navbar-brand {
+    width: 125px; }
+  .navbar-brand > img {
+    width: 125px; } }
