@@ -273,7 +273,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #292b2c;
-  background-color: #184264; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -1382,7 +1382,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: #184264; }
+    background-color: #fff; }
 
 .table-sm th,
 .table-sm td {
@@ -1472,7 +1472,7 @@ pre {
   .table-inverse th,
   .table-inverse td,
   .table-inverse thead th {
-    border-color: #184264; }
+    border-color: #fff; }
   .table-inverse.table-bordered {
     border: 0; }
 
@@ -4016,7 +4016,7 @@ button.close {
   vertical-align: text-top !important; }
 
 .bg-faded {
-  background-color: #153a58; }
+  background-color: #f7f7f7; }
 
 .bg-primary {
   background-color: #09c0d6 !important; }
