@@ -1,5 +1,6 @@
 body {
-    color: white;
+    color: black;
+    font-family: "Cairo", sans-serif
 }
 
 #jumboCarousel {
@@ -12,16 +13,162 @@ body {
     min-width: 100%;
 }
 
-.header-media {
-    min-height: 20px;
-    width: 100%;
-    background: white;
-    background-color: white;
+#jumboCarousel {
+    .controlsBlock {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        bottom: 100px;
+        display: block;
+        width: 177px;
+        margin: 0 auto;
+        z-index: 1;
+        height: 24px;
+        text-align: center;
+ }
+ 
+ .controls {
+        position: relative;
+        display: block;
+ }
+ 
+ .carousel-control {
+       position: relative;
+       top: 25.5px;
+       bottom: 0;
+       left: 0;
+       background: #000000;
+       font-size: 5px;
+       background: none !important;
+       color: #000 !important;
+       text-align: center;
+ }
+ 
+ .carousel-control {
+         font-size: 60px;
+ }
+ 
+ .carousel-control.left {
+       right: 50%;
+ }
+ 
+ .carousel-control.right {
+       left: 50%;
+       
+ }
+  
+ .carousel-control .fa-angle-right,
+ .carousel-control .fa-angle-left {
+       position: absolute;
+       z-index: 5;
+       display: inline-block;
+ }
+ 
+ .carousel-control .fa-angle-right,
+ .carousel-control .fa-angle-left{
+    color: white;
+    transform: scale(1.5,1);
+}
+.carousel-control .fa-angle-right:hover,{
+    color: rgba(255, 255, 255, 0.5);
+}
+.carousel-control .fa-angle-left:hover,{
+    color: rgba(255, 255, 255, 0.5);
+}
+}
+
+.fa {
+    color: black;
+  }
+
+.spacer {
+    min-height: 100px;
+}
+
+.spacer-half{
+    min-height: 50px;
+}
+
+.ipsum-wrapper {
+    background: #184264;
+    color: white;
+    .container {
+        top: 90px;
+        @media (max-width: 62em){
+            top: 0;
+        }
+    }
+}
+
+.lorem-wrapper p {
     color: black;
 }
 
-.filler {
-    min-height: 2000px;
+.lorem-wrapper h2 {
+    color: #09c0d6;
+}
+
+.perspiciatis h2 {
+    color: #184264;
+}
+
+.perspiciatis p {
+    color: grey;
+}
+
+.lorem-ipsum {
+    color: #184264;
+    font-weight: 600;
+}
+
+.lorem-ipsum p{
+    color: grey;
+    font-weight: 600;
+    }    
+
+.ipsum-spacer {
+    min-height: 50px;
+        @media (max-width: 62em){
+         min-height: 0;
+    }
+}
+
+.form-button:hover {
+    background-color: #184264;
+    border: 0;
+}
+.form-button {
+    background-color: #184264;
+    border: 0;
+    font-size: 15px;
+    padding: 15px 40px;
+    border-radius: 0;
+}
+
+.body-button:hover {
+    background-color: #09c0d6;
+    border: 0;
+}
+.body-button {
+    background-color: #09c0d6;
+    border: 0;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 0;
+}
+
+.plus-button {
+    background-color: #09c0d6;
+    border: 0;
+    font-size: 15px;
+    padding: 13px 17px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.plus-button:hover {
+    background-color: #09c0d6;
+    border: 0;
 }
 
 #myCaption .carousel-caption{
@@ -66,6 +213,18 @@ h1 {
     }
 }
 
+h1.short {
+    line-height: 80%;
+}
+
+h2 {
+    font-family: "Cairo", sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    @media(max-width: 62em){
+        font-size: 2.3em;
+    }
+}
 
 h4 {
     font-family: "Cairo", sans-serif;
@@ -75,9 +234,14 @@ h4 {
         font-size: 1em;
     }
 }
-h1.short {
-    line-height: 80%;
+
+p {
+    font-family: "Cairo", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 200%;
 }
+
 
 
 h4.text-justify{
@@ -91,21 +255,32 @@ h4.text-justify{
 
 .navbar-wrapper {
     position: absolute;
-    top: 20px;
+    top: 80px;
     left: 0;
     right: 0;
     z-index: 10;
 }
       
 
-#mynavbar .navbar {
-    width:100%;
-    background: none !important;
-    background-color:#fff;
-    z-index: 10;
-    border-radius:0;
-    border-color:transparent;
+#mynavbar {
 
+    @media(max-width:62em){
+        .navbar-brand{
+            width:125px;
+        }
+        .navbar-brand>img{
+            width:125px;
+        }
+    
+    }
+    .navbar {
+        width:100%;
+        background: none !important;
+        background-color:#fff;
+        z-index: 999 !important;
+        border-radius:0;
+        border-color:transparent;
+    }
     .navbar-toggler {
         cursor:pointer;
         outline:0;
@@ -134,12 +309,79 @@ h4.text-justify{
         }
     }
 }
-@media(max-width:62em){
-    .navbar-brand{
-        width:125px;
-    }
-    .navbar-brand>img{
-        width:125px;
-    }
 
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.footer-widget {
+    border: 1px solid #444;
+    height: 100%;
+    width: 100%;
+}
+
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: none;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: none;
+}
+
+.form-control{
+    border-color: #09c0d6;
+}
+.form-control:focus {
+    border-color: #184264;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #09c0d6;
+  }
+
+.footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+  }
+
+  #imaginary_container{
+    margin-bottom: 5%; 
+    max-width: 300px; 
+}
+.stylish-input-group .input-group-addon{
+    background: #09c0d6 !important; 
+    border-color: #fff;
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+    border-color:#fff;
+    background: #09c0d6;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.blue-icon .fa{
+    color: #184264;
+}
+.white-icon .fa{
+    color: white;
+    
+}
+.search-color {
+    .form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
+    .form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+    .form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+    .form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+    .form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+}
+
+.no-margin {
+    padding: 0 !important;
 }
