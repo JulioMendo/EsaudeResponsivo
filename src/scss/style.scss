@@ -2,7 +2,7 @@ body {
     color: black;
     font-family: "Cairo", sans-serif
 }
-
+// --- Definições do Slider --- /// 
 #jumboCarousel {
     margin-top: -50%;
     height: 100%;
@@ -14,12 +14,13 @@ body {
 }
 
 #jumboCarousel {
-    .controlsBlock {
+    .controlsBlock {               // Alinha o bloco de controles
         position: relative;
-        bottom: 0;
-        left: 0;
-        bottom: 100px;
         display: block;
+        @media (max-width: 62em){
+            bottom: 80px;
+        }
+        bottom: 120px;
         width: 177px;
         margin: 0 auto;
         z-index: 1;
@@ -27,56 +28,58 @@ body {
         text-align: center;
  }
  
- .controls {
-        position: relative;
-        display: block;
- }
  
- .carousel-control {
-       position: relative;
-       top: 25.5px;
-       bottom: 0;
-       left: 0;
-       background: #000000;
-       font-size: 5px;
-       background: none !important;
-       color: #000 !important;
-       text-align: center;
- }
- 
- .carousel-control {
-         font-size: 60px;
- }
- 
- .carousel-control.left {
-       right: 50%;
- }
- 
- .carousel-control.right {
-       left: 50%;
-       
- }
-  
- .carousel-control .fa-angle-right,
- .carousel-control .fa-angle-left {
-       position: absolute;
-       z-index: 5;
-       display: inline-block;
- }
- 
- .carousel-control .fa-angle-right,
- .carousel-control .fa-angle-left{
-    color: white;
-    transform: scale(1.5,1);
-}
-.carousel-control .fa-angle-right:hover,{
-    color: rgba(255, 255, 255, 0.5);
-}
-.carousel-control .fa-angle-left:hover,{
-    color: rgba(255, 255, 255, 0.5);
-}
+    .controls {
+        position: relative;      // Transforma a posição em relativa
+        display: block;          // Transforma os controles em bloco
+    }
+
+    .carousel-control {             // Ajusta o controle clicável
+        position: relative;      
+        left: 0;
+        background: #000000;
+        font-size: 5px;
+        background: none !important;
+        color: #000 !important;
+        text-align: center;
+    }
+
+    .carousel-control {
+            font-size: 60px;
+            @media (max-width: 62em){
+            font-size: 40px;
+        }
+
+    }
+
+    .carousel-control.left {       // Espaçamento
+        left: -10px;
+    }
+
+    .carousel-control.right {
+        left: 10px;      
+    }
+
+    .carousel-control .fa-angle-right,        //Display dos ícones
+    .carousel-control .fa-angle-left {   
+        z-index: 5;
+        display: inline-block;
+    }
+
+    .carousel-control .fa-angle-right,
+    .carousel-control .fa-angle-left{
+        color: white;
+        transform: scale(1.5,1);
+    }
+        .carousel-control .fa-angle-right:hover,{
+        color: rgba(255, 255, 255, 0.5);
+    }
+        .carousel-control .fa-angle-left:hover,{
+        color: rgba(255, 255, 255, 0.5);
+    }
 }
 
+// ---                        --- /// 
 .fa {
     color: black;
   }

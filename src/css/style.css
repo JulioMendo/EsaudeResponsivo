@@ -13,15 +13,16 @@ body {
 
 #jumboCarousel .controlsBlock {
   position: relative;
-  bottom: 0;
-  left: 0;
-  bottom: 100px;
   display: block;
+  bottom: 120px;
   width: 177px;
   margin: 0 auto;
   z-index: 1;
   height: 24px;
   text-align: center; }
+  @media (max-width: 62em) {
+    #jumboCarousel .controlsBlock {
+      bottom: 80px; } }
 
 #jumboCarousel .controls {
   position: relative;
@@ -29,8 +30,6 @@ body {
 
 #jumboCarousel .carousel-control {
   position: relative;
-  top: 25.5px;
-  bottom: 0;
   left: 0;
   background: #000000;
   font-size: 5px;
@@ -40,16 +39,18 @@ body {
 
 #jumboCarousel .carousel-control {
   font-size: 60px; }
+  @media (max-width: 62em) {
+    #jumboCarousel .carousel-control {
+      font-size: 40px; } }
 
 #jumboCarousel .carousel-control.left {
-  right: 50%; }
+  left: -10px; }
 
 #jumboCarousel .carousel-control.right {
-  left: 50%; }
+  left: 10px; }
 
 #jumboCarousel .carousel-control .fa-angle-right,
 #jumboCarousel .carousel-control .fa-angle-left {
-  position: absolute;
   z-index: 5;
   display: inline-block; }
 
