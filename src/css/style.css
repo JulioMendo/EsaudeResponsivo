@@ -2,6 +2,92 @@ body {
   color: black;
   font-family: "Cairo", sans-serif; }
 
+.fa {
+  color: black; }
+
+.perspiciatis h2 {
+  color: #184264; }
+
+.perspiciatis p {
+  color: grey; }
+
+.lorem-ipsum {
+  color: #184264;
+  font-weight: 600; }
+
+.lorem-ipsum p {
+  color: grey;
+  font-weight: 600; }
+
+h1 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  font-size: 4.0em; }
+  @media (max-width: 62em) {
+    h1 {
+      font-size: 3.2em; } }
+  @media (max-width: 47.9em) {
+    h1 {
+      font-size: 2.2em; } }
+
+h1.short {
+  line-height: 80%; }
+
+h2 {
+  font-family: "Cairo", sans-serif;
+  font-weight: normal;
+  font-size: 3em; }
+  @media (max-width: 62em) {
+    h2 {
+      font-size: 2.3em; } }
+
+h4 {
+  font-family: "Cairo", sans-serif;
+  font-weight: normal;
+  font-size: 1.3em; }
+  @media (max-width: 62em) {
+    h4 {
+      font-size: 1em; } }
+
+h4.text-justify {
+  text-align: right;
+  max-width: 300px; }
+  @media (max-width: 62em) {
+    h4.text-justify {
+      max-width: 200px; } }
+
+p {
+  font-family: "Cairo", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 200%; }
+
+.red {
+  color: red; }
+
+.blue-icon .fa {
+  color: #184264; }
+
+.white-icon .fa {
+  color: white; }
+
+.search-color {
+  /* WebKit, Blink, Edge */
+  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 19+ */
+  /* Internet Explorer 10-11 */
+  /* Microsoft Edge */ }
+  .search-color .form-control::-webkit-input-placeholder {
+    color: white; }
+  .search-color .form-control:-moz-placeholder {
+    color: white; }
+  .search-color .form-control::-moz-placeholder {
+    color: white; }
+  .search-color .form-control:-ms-input-placeholder {
+    color: white; }
+  .search-color .form-control::-ms-input-placeholder {
+    color: white; }
+
 #jumboCarousel {
   margin-top: -50%;
   height: 100%;
@@ -65,8 +151,31 @@ body {
 #jumboCarousel .carousel-control .fa-angle-left:hover {
   color: rgba(255, 255, 255, 0.5); }
 
-.fa {
-  color: black; }
+#myCaption .carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  left: inherit;
+  right: inherit;
+  width: 280px;
+  color: #fff;
+  bottom: -95px; }
+
+#jumboCarousel .carousel-caption {
+  color: white;
+  text-align: center;
+  max-width: 500px;
+  left: auto;
+  /*top: auto;*/
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial; }
+
+.item {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 .spacer {
   min-height: 100px; }
@@ -83,31 +192,27 @@ body {
       .ipsum-wrapper .container {
         top: 0; } }
 
+.ipsum-spacer {
+  min-height: 50px; }
+  @media (max-width: 62em) {
+    .ipsum-spacer {
+      min-height: 0; } }
+
 .lorem-wrapper p {
   color: black; }
 
 .lorem-wrapper h2 {
   color: #09c0d6; }
 
-.perspiciatis h2 {
-  color: #184264; }
+.navbar-wrapper {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 10; }
 
-.perspiciatis p {
-  color: grey; }
-
-.lorem-ipsum {
-  color: #184264;
-  font-weight: 600; }
-
-.lorem-ipsum p {
-  color: grey;
-  font-weight: 600; }
-
-.ipsum-spacer {
-  min-height: 50px; }
-  @media (max-width: 62em) {
-    .ipsum-spacer {
-      min-height: 0; } }
+.no-margin {
+  padding: 0 !important; }
 
 .form-button:hover {
   background-color: #184264;
@@ -142,82 +247,6 @@ body {
 .plus-button:hover {
   background-color: #09c0d6;
   border: 0; }
-
-#myCaption .carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: left;
-  left: inherit;
-  right: inherit;
-  width: 280px;
-  color: #fff;
-  bottom: -95px; }
-
-#jumboCarousel .carousel-caption {
-  color: white;
-  text-align: center;
-  max-width: 500px;
-  left: auto;
-  /*top: auto;*/
-  top: 50%;
-  transform: translateY(-50%);
-  bottom: initial; }
-
-.item {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
-
-h1 {
-  font-family: "Cairo", sans-serif;
-  font-weight: 600;
-  font-size: 4.0em; }
-  @media (max-width: 62em) {
-    h1 {
-      font-size: 3.2em; } }
-  @media (max-width: 47.9em) {
-    h1 {
-      font-size: 2.2em; } }
-
-h1.short {
-  line-height: 80%; }
-
-h2 {
-  font-family: "Cairo", sans-serif;
-  font-weight: normal;
-  font-size: 3em; }
-  @media (max-width: 62em) {
-    h2 {
-      font-size: 2.3em; } }
-
-h4 {
-  font-family: "Cairo", sans-serif;
-  font-weight: normal;
-  font-size: 1.3em; }
-  @media (max-width: 62em) {
-    h4 {
-      font-size: 1em; } }
-
-p {
-  font-family: "Cairo", sans-serif;
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 200%; }
-
-h4.text-justify {
-  text-align: right;
-  max-width: 300px; }
-  @media (max-width: 62em) {
-    h4.text-justify {
-      max-width: 200px; } }
-
-.navbar-wrapper {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  right: 0;
-  z-index: 10; }
 
 @media (max-width: 62em) {
   #mynavbar .navbar-brand {
@@ -256,19 +285,6 @@ h4.text-justify {
       font-weight: normal;
       color: white !important; } }
 
-.full-width-div {
-  position: absolute;
-  width: 100%;
-  left: 0; }
-
-.footer-widget {
-  border: 1px solid #444;
-  height: 100%;
-  width: 100%; }
-
-.red {
-  color: red; }
-
 .form-area {
   background-color: none;
   padding: 10px 40px 60px;
@@ -281,12 +297,6 @@ h4.text-justify {
 .form-control:focus {
   border-color: #184264;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #09c0d6; }
-
-.footer {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background-color: #fff; }
 
 #imaginary_container {
   margin-bottom: 5%;
@@ -306,28 +316,8 @@ h4.text-justify {
   border: 0;
   background: transparent; }
 
-.blue-icon .fa {
-  color: #184264; }
-
-.white-icon .fa {
-  color: white; }
-
-.search-color {
-  /* WebKit, Blink, Edge */
-  /* Mozilla Firefox 4 to 18 */
-  /* Mozilla Firefox 19+ */
-  /* Internet Explorer 10-11 */
-  /* Microsoft Edge */ }
-  .search-color .form-control::-webkit-input-placeholder {
-    color: white; }
-  .search-color .form-control:-moz-placeholder {
-    color: white; }
-  .search-color .form-control::-moz-placeholder {
-    color: white; }
-  .search-color .form-control:-ms-input-placeholder {
-    color: white; }
-  .search-color .form-control::-ms-input-placeholder {
-    color: white; }
-
-.no-margin {
-  padding: 0 !important; }
+.footer {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff; }
